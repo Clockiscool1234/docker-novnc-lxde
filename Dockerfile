@@ -24,8 +24,6 @@ RUN set -ex; \
       lxde \
       xvfb
 
-RUN cp /usr/share/novnc/vnc.html cp /usr/share/novnc/index.html
-
 COPY . /app
 CMD ["/app/entrypoint.sh"]
 EXPOSE 8080
